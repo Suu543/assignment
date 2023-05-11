@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./a.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header id="header">
+      <h1 class="navbar-header">Hackers<b>&</b>Painters</h1>
+      <nav class="navbar-body">
+        <ul class="navbar-body-items">
+          <li class="navbar-body-item">
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li class="navbar-body-item">
+            <a href="#opensource">Open Source</a>
+          </li>
+          <li class="navbar-body-item">
+            <a href="#prosandcons">Pros and Cons</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="introduction">
+      <div class="intro-container">
+        <div class="intro-left-section">
+          <img id="book" src="./img/book.jpg" alt="book" />
+          <img id="paul" src="./img/Paul.png" alt="paul" />
+        </div>
+        <div class="intro-right-section">
+          <h1>제목: 해커와 화가</h1>
+          <h2>작가:폴 그레이엄</h2>
+          <p>
+            해커와 화가는 와이 콤비네이터의 공동 창업자이자 천재 해커로 불리는
+            폴 그레이엄의 쓴 책으로 이 이 책에서 그는 프로그래머와 예술가, 웹
+            기반 프로그램, 프로그래밍 언어, 스타트업 같은 주제에 대해
+            이야기한다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="opensource">
+      <div class="opensource-container">
+        <div class="opensource-left-section"></div>
+        <div class="opensource-right-section">
+            <div class="opensource-right-section-body">
+                <h1>오픈 소스는 무엇인가</h1>
+          <h2>오픈소스에 사전적 설명은:오픈소스란 소프트웨어 등을 만들 때 해당 소프트웨어가 어떻게 만들어졌는지 알 수 있도록 일종의 프로그래밍 '설계지도'인 소스코드를 무료 공개, 배포하는 것</h2>
+          <p>
+            오픈소스는 개발자들에 문화이다.
+            오픈소스는 코드를 서로 공유하고 나이, 직급, 국적 등 상관없이 누구나 이용하고 코드에 기여할 수 있다. 
+            대표적인 오픈 소스로는 트워터와 리눅스가 있다
+          </p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="prosandcons">
+        <div class="prosandcons-container">
+            <div class="prosandcons-left-section">
+                <div class="prosandcons-left-section-body">
+                    <h1>장점</h1>
+                    <p>투명성,인력 양성,가격 절감,기술혁신</p>
+                    <h1>단점</h1>
+                    <p>보안,불확실한 로드맵</p>
+                </div>
+            </div>
+            <div class="prosandcons-right-section"></div>
+        </div>
+    </section>
+
+    <script>
+      const paul = document.getElementById("paul");
+      const book = document.getElementById("book");
+      const left_section = document.getElementsByClassName("intro-left-section");
+      let change = false;
+
+      left_section[0].addEventListener("click", (e) => {
+        change = !change;
+
+        book.style.zIndex = "0";
+        paul.style.zIndex = "0";
+
+        if (change) {
+          book.style.zIndex = "10";
+          paul.style.zindex = "9";
+        } else {
+          paul.style.zIndex = "10";
+          book.style.zindex = "9";
+        }
+      });
+    </script>
+  </body>
+</html>
