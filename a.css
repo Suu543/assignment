@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Roboto+Slab:wght@500&display=swap");
+:root {
+  --White_color: #eeeeee;
+  --teal_color: #00adb5;
+  --grey_color: #393e46;
+  --black_color: #222831;
+  --red_color: #9e0b0b;
+  --brown_Color: #C4A484;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
+}
+
+/* header section */
+
+#header {
+  height: 80px;
+  width: 100%;
+  background-color: var(--grey_color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.navbar-header {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 2px;
+  text-shadow: 3px 2px 2px rgba(130,132,138,0.96);
+}
+
+.navbar-header b {
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: var(--red_color);
+  text-shadow: 3px 2px 2px rgba(228, 55, 55, 0.96)
+}
+
+.navbar-body-items {
+  display: flex;
+  width: 600px;
+  justify-content: space-around;
+}
+
+.navbar-body-items li a {
+  color: white;
+  font-size: 22px;
+}
+
+/* Introduction Section */
+#introduction {
+}
+
+.intro-container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-left-section {
+  display: flex;
+  position: relative;
+  flex: 1 1 50%;
+}
+
+.intro-left-section img {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+}
+
+#paul {
+  left: 300px;
+  top: -250px;
+  box-shadow: 24px 28px 5px 0px rgba(150,150,150,0.75);
+-webkit-box-shadow: 24px 28px 5px 0px rgba(150,150,150,0.75);
+-moz-box-shadow: 24px 28px 5px 0px rgba(150,150,150,0.75);
+}
+
+#book {
+  left: 200px;
+  top: -50px;
+  box-shadow: 24px 28px 5px 0px rgba(150,150,150,0.75);
+-webkit-box-shadow: 24px 28px 5px 0px rgba(150,150,150,0.75);
+-moz-box-shadow: 24px 28px 5px 0px rgba(150,150,150,0.75);
+}
+
+.intro-right-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  gap: 50px;
+}
+
+.intro-right-section h1 {
+  font-size: 65px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.intro-right-section h2 {
+  font-size: 45px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.intro-right-section p {
+  font-size: 35px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    z-index: 0;
+  }
+  99% {
+    opacity: 1;
+    z-index: 0;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+
+/* opensource */
+#opensource {
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd1cb;
+}
+
+.opensource-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.opensource-left-section {
+  flex: 1 1 40%;
+  height: 100%;
+  background-image: url("./img/christian-koch-D_4R9CcYZOk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top top;
+  opacity: 0.7;
+}
+
+.opensource-right-section {
+  flex: 1 1 60%;
+  height: 100%;
+  background-color: var(--brown_Color);
+  text-align: center;
+}
+
+.opensource-right-section-body {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 50px;
+  text-align: left;
+  color: var(--White_color);
+  text-shadow: 4px 5px 3px rgba(120,92,71,0.93);
+
+}
+
+.opensource-right-section-body h1 {
+  font-size: 50px;
+  font-family: "Noto Sans KR", sans-serif;
+
+}
+
+.opensource-right-section-body h2 {
+  font-size: 45px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.opensource-right-section-body p {
+  font-size: 35px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* prosandcons */
+#prosandcons {
+  width: 100%;
+  height: 100vh;
+  background-color: #faf6f0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.prosandcons-container {
+  width: 90%;
+  height: 85%;
+  background-color: var(--brown_Color);
+  color: var(--White_color);
+  display: flex;
+}
+
+.prosandcons-left-section {
+  flex: 1 1 60%;
+  height: 100%;
+  background-color: var(--brown_Color);
+  text-align: center;
+}
+
+.prosandcons-right-section {
+  flex: 1 1 40%;
+  height: 100%;
+  background-image: url("./img/neil-daftary-RKzTH2cT5Ns-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top top;
+  opacity: 0.7;
+}
+
+.prosandcons-left-section-body {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: auto;
+  text-align: start;
+  color: var(--White_color);
+  gap: 20px;
+}
+
+.prosandcons-left-section-body h1 {
+  font-size: 45px;
+}
+
+.prosandcons-left-section-body p {
+  font-size: 30px;
+}
+
